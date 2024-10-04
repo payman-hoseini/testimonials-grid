@@ -1,101 +1,110 @@
-import Image from "next/image";
+import Daniel from './../../public/images/image-daniel.jpg'
+import Jonathan from './../../public/images/image-jonathan.jpg'
+import Kira from './../../public/images/image-kira.jpg'
+import Jeanette from './../../public/images/image-jeanette.jpg'
+import Patrick from './../../public/images/image-patrick.jpg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="lg:h-screen md:h-[190vh] h-[350vh] w-screen bg-Light-grayish-blue">
+        <div className='md:max-w-7xl w-[90vw] mx-auto grid md:grid lg:grid-cols-4 gap-8 py-16'>
+            <div className='bg-Moderate-violet back rounded-md p-8 font-Barlow md:col-span-2 shadow-xl'>
+              <div className='flex items-center'>
+                  <div>
+                    <Image src={Daniel} alt="Daniel" className='rounded-full border-4 border-white/20 mr-6'/>
+                  </div>
+                  <div>
+                    <p className='text-lg leading-none text-white'>Daniel Clifford</p>
+                    <p className='text-white/50'>Verified Graduate</p>
+                  </div>
+              </div>
+              <div className='mt-6'>
+                  <p className='text-white font-semibold text-2xl'>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+                  in the company I joined. I honestly feel I got every penny’s worth.</p>
+                  <p className='mt-5 text-white/70'>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+                  transition and have heard some people who had an amazing experience here. I signed up 
+                  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+                  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+                  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+              </div>
+            </div>
+            <div className='bg-Very-dark-grayish-blue rounded-md p-8 font-Barlow shadow-xl'>
+              <div className='flex items-center'>
+                  <div>
+                    <Image src={Jonathan} alt="jonathan" className='rounded-full border-4 border-white/20 mr-6'/>
+                  </div>
+                  <div>
+                    <p className='text-lg leading-none text-white'>Jonathan Walters</p>
+                    <p className='text-white/50'>Verified Graduate</p>
+                  </div>
+              </div>
+              <div className='mt-6'>
+                  <p className='text-white font-semibold text-2xl'>The team was very supportive and kept me motivated</p>
+                  <p className='mt-5 text-white/70'>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+                  for a big company. This was one of the best investments I’ve made in myself. ”</p>
+              </div>
+            </div>
+            <div className='bg-white rounded-md p-8 font-Barlow md:row-span-2 shadow-xl'>
+              <div className='flex items-center'>
+                  <div>
+                    <Image src={Kira} alt="Kira" className='rounded-full border-4 border-white/20 mr-6'/>
+                  </div>
+                  <div>
+                    <p className='text-lg leading-none text-Very-dark-grayish-blue'>Kira Whittle</p>
+                    <p className='text-Very-dark-grayish-blue/50'>Verified Graduate</p>
+                  </div>
+              </div>
+              <div className='mt-6'>
+                  <p className='text-Very-dark-grayish-blue font-semibold text-2xl'>Such a life-changing experience. Highly recommended!</p>
+                  <p className='mt-5 text-Very-dark-grayish-blue/70'>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+                  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+                  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+                  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+                  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+                  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+                  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+                  100% recommend! ”</p>
+              </div>
+            </div>
+            <div className='bg-white rounded-md p-8 font-Barlow shadow-xl'>
+              <div className='flex items-center'>
+                  <div>
+                    <Image src={Jeanette} alt="Jeanette" className='rounded-full border-4 border-white/20 mr-6'/>
+                  </div>
+                  <div>
+                    <p className='text-lg leading-none text-Very-dark-grayish-blue'>Kira Whittle</p>
+                    <p className='text-Very-dark-grayish-blue/50'>Verified Graduate</p>
+                  </div>
+              </div>
+              <div className='mt-6'>
+                  <p className='text-Very-dark-grayish-blue font-semibold text-2xl'>An overall wonderful and rewarding experience</p>
+                  <p className='mt-5 text-Very-dark-grayish-blue/70'>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+                  while doing something I love. ”</p>
+              </div>
+            </div>
+            <div className='bg-Very-dark-blackish-blue rounded-md p-8 font-Barlow md:col-span-2 shadow-xl'>
+              <div className='flex items-center'>
+                  <div>
+                    <Image src={Patrick} alt="Patrick" className='rounded-full border-4 border-Moderate-violet mr-6'/>
+                  </div>
+                  <div>
+                    <p className='text-lg leading-none text-white'>Patrick Abrams</p>
+                    <p className='text-white/50'>Verified Graduate</p>
+                  </div>
+              </div>
+              <div className='mt-6'>
+                  <p className='text-white font-semibold text-2xl'>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+                  learning from their experiences was easy.</p>
+                  <p className='mt-5 text-white/70'>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+                  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+                  junior developer. The standard is above the rest. You will get the personal attention you need from 
+                  an incredible community of smart and amazing people. ”</p>
+              </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }

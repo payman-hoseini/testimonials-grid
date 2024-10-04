@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "Moderate-violet": "hsl(263, 55%, 52%)",
+        "Very-dark-grayish-blue": "hsl(217, 19%, 35%)",
+        "Very-dark-blackish-blue": "hsl(219, 29%, 14%)",
+        "Light-gray": "hsl(0, 0%, 81%)",
+        "Light-grayish-blue": "hsl(210, 46%, 95%)"
       },
+      fontFamily : {
+        Barlow : ["Barlow"]
+      }
     },
   },
   plugins: [],
